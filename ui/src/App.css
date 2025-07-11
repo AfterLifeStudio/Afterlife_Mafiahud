@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karantina:wght@300;400;700&display=swap');
+
+body {
+  background: url('./assets/background.webp');
+  background-size: cover;
+
+
+  height: 100%;
+  user-select: none;
+  overflow: hidden;
+  font-family: Inter;
+}
+
+
+.speedometer {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speedometer-back {
+  height: 13vw;
+}
+
+.arrow {
+  position: absolute;
+  height: 4vw;
+  margin-bottom: -2.7vw;
+  margin-left: -2.5vw;
+  transform: rotate(80deg);
+  transform-origin: 3.4vw .6vw;
+  transition: 200ms ease;
+}
+
+.fuelbar {
+  position: absolute;
+  height: .7vw;
+  margin-bottom: 5vw;
+}
+
+.fuelback {
+  opacity: 0.5;
+}
+
+.distance-meter {
+  position: absolute;
+  color: white;
+  font-size: 0.65vw;
+  letter-spacing: 0.1vw;
+  bottom: 1.55vw;
+  margin-left: 0.2vw;
+}
+
+
+.player-status {
+  position: absolute;
+  bottom: 2vw;
+  left: 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35vw;
+}
+
+.extrastatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+  width: 3.1vw;
+  height: 2vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.status div {
+  color: white;
+  font-size: 0.7vw;
+}
+
+.status img {
+  height: 1.1vw;
+}
+
+.health {
+  height: 1.8vw;
+  border-top: 0.25vw solid #e63e3ed7;
+}
+
+.armour img {
+  height: .9vw;
+}
+
+.health img {
+  height: .8vw;
+}
+
+.armour {
+  height: 1.8vw;
+  border-top: 0.25vw solid #6D69FAd7;
+}
+
+.extra {
+  border-top: 0.15vw solid #ffffffd7;
+}
+
+
+.map {
+  position: absolute;
+  bottom: 5vw;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.bar{
+  width: 90%;
+  height: 0.15vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.outline {
+  width: 15.8vw;
+  height: 9.8vw;
+  /* background-color: rgba(126, 126, 126, 0.459); */
+    border-width: 0.2vw;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0)) 1;
+}
+
+
+
+.transition-fade-enter {
+  opacity: 0;
+}
+
+.transition-fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.transition-fade-exit {
+  opacity: 1;
+}
+
+.transition-fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
