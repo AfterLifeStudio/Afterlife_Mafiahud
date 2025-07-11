@@ -6,9 +6,9 @@ lua54 'yes'
 
 shared_script {
 	'config.lua',
+	'@qbx_core/modules/playerdata.lua',	
 	'@ox_lib/init.lua'
 } 
-
 
 server_scripts {
 	'server/*.lua'
